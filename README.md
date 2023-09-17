@@ -47,10 +47,6 @@ These components work together to create a fully functional to-do list applicati
 
 
 ---
-## Live Demo
-You can check out the live demo of the project on <a href="https://qamarsharef27.github.io/ToDoList2/">Live Demo</a>.
-
----
 ## Get the Project Locally
 To get the project on your local machine, follow these steps:
 
