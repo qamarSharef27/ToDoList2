@@ -1,0 +1,17 @@
+#Header {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+  #Header1 {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+  
+  #HeaderText {
+    color: #2632a3;
+    font-family: 'Racing Sans One', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+  }
