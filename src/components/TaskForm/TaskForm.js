@@ -4,16 +4,15 @@ import TextField from '@mui/material/TextField';
 import { Grid } from '@mui/material';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 
-const TaskForm = ({ addTask }) => {
+  const TaskForm = ({ addTask }) => {
   const [newTaskText, setNewTaskText] = useState('');
-
+  
   const AddTask = () => {
     if (newTaskText.trim() !== '') {
       addTask(newTaskText);
       setNewTaskText('');
     }
   };
-
   return (
      <Grid  
       container 
@@ -30,9 +29,7 @@ const TaskForm = ({ addTask }) => {
           size="small"
           multiline
         />
-
      <AddCircleIcon  onClick={AddTask} className="IconStyle"/>
-
      </Grid>
   );
 };

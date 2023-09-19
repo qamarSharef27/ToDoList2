@@ -1,22 +1,22 @@
-.checkbox {
+.MuiButtonBase-root.checkbox  {
     color:aliceblue;
 }
 
-.edit {
+.MuiSvgIcon-root.edit {
     color:aliceblue;
     padding: 1px;
 }
 
-.delete{
+.MuiSvgIcon-root.delete{
     color:aliceblue;
 }
 
-.list .MuiList-root{
+.MuiList-root.list {
     width: 99%;
     max-width: 360px;
 }
 
-.items .MuiListItem-root {
+.MuiListItem-root.items  {
     background-color: #3949ab;
     border-radius: 15px;
     margin: 4px;
