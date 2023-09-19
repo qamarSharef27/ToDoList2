@@ -28,22 +28,28 @@ This To-Do List App project is built using React and is organized into several c
 1. **App Component**
 File: App.js
 Description: The App component is the root component of the application. It manages the overall state of the to-do list, including task creation, deletion, editing, and task completion. The state is also persisted to local storage, ensuring data retention across sessions.
+File: App.css
+Description: Provide App styling.
 
 2. **Header Component**
-File: Header.js
+File: Header.js 
 Description: The Header component is responsible for displaying the app's title. It provides a visual header at the top of the user interface, enhancing the app's aesthetics.
+File: header.css
+Description: Provide Header styling.
+
 
 3. **TaskForm Component**
 File: TaskForm.js
 Description: The TaskForm component handles the task creation process. It includes an input field for users to enter new tasks and a button to add them to the to-do list.
+File: taskform.css
+Description: Provide Task Form styling (New Task TextField and Clickable Add Icon).
 
 4. **TaskList Component**
 File: TaskList.js
-Description: The TaskList component serves as the core of the to-do list. It displays the list of tasks, allows users to mark tasks as completed, edit task names, and delete tasks. Each task is represented as a list item within this component.
+Description: The TaskList component serves as the core of the to-do list. It displays the list of tasks, allows users to mark tasks as completed, edit task names, and delete tasks. Each task is represented as a list item (an individual task within the TaskList. It includes a checkbox for marking task completion, the task name, and buttons for editing and deleting tasks) within this component.
+File: tasklist.css
+Description: Provide Task List & Items styling (CheckBox for complete Task, New Task Text and Clickable Edit & Delete Icon).
 
-5. **TaskListItem Component**
-File: TaskListItem.js
-Description: The TaskListItem component represents an individual task within the TaskList. It includes a checkbox for marking task completion, the task name, and buttons for editing and deleting tasks.
 These components work together to create a fully functional to-do list application with a clean and user-friendly interface. Each component is responsible for specific tasks, making the application modular and easy to maintain.
 
 
