@@ -3,6 +3,10 @@ import React, { useState } from "react";
 import Header from "./components/Header/Header";
 import TaskForm from './components/TaskForm/TaskForm';
 import TaskList from './components/TaskList/TaskList';
+import { Avatar, Grid, Paper } from '@mui/material';
+import ChecklistIcon from '@mui/icons-material/Checklist';
+import { indigo } from '@mui/material/colors';
+
 
 
 function App() {
@@ -45,50 +49,35 @@ function App() {
     updateLocalStorage(newTasks);
   }
 
+
+  const paperStyle ={paddig : 20, height:'75vh', width:380, margin:"80px auto", overflowY: 'auto'}
+
   return (
     <>
-    <body className="mainclass">
+      <Grid>
 
-    <form>
-    <div className="form-container">   
+        <Paper elevation={10} style={paperStyle}>
 
-    <Header />
+        <Grid align='center' paddingTop={6}>
+          <Avatar         sx={{ width: 56, height: 56, bgcolor: indigo[500] }}>
+            <ChecklistIcon />
+          </Avatar>
+          <Header />
+        </Grid>
 
-    <main>
-
-     <div className="row">
-      <div className="col-3 col-s-3 menu">
-      <div id="addTask">
-
-      <TaskForm addTask={addTask} />
-     
-     </div>
-     </div>
-
-     <hr id="Line" />
-
-     <div class="col-12 col-s-12 ">
-
-        <label for="TaskClass">Task:</label>
+        <TaskForm addTask={addTask} />
+        
+        <hr id="Line" />
 
         <TaskList
           tasks={tasks}
           TaskCompleted={TasksCompleted}
           editTask={editTask}
           deleteTask={deleteTask}
-          />
+        />
+        </Paper> 
 
-    </div>
-    </div>
-
-    <div class="form-line"></div>
-
-    /</main>
-
-    </div>
-    </form>
-
-    </body>
+      </Grid>
     </>
   );
 }

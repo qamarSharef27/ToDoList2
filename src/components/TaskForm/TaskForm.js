@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import "./taskform.css";
+import TextField from '@mui/material/TextField';
+import { Button, Grid } from '@mui/material';
+import AddCircleIcon from '@mui/icons-material/AddCircle';
 
 const TaskForm = ({ addTask }) => {
   const [newTaskText, setNewTaskText] = useState('');
@@ -11,25 +13,31 @@ const TaskForm = ({ addTask }) => {
     }
   };
 
+  const TextFieldSstyle = {padding:10, margin:0, height:8}
+  const ButtonStyle = {width:60, height:35, margin:10}
+
   return (
-    <React.Fragment>
+     <Grid  
+      container 
+      spacing={0}  
+      marginLeft={4.5} 
+      marginRight={5} >
       
-      <input
-        type="text"
-        name="task"
-        id="TaskClass"
-        aria-labelledby="TaskLabel"
-        placeholder="Add New Task:"
-        value={newTaskText}
-        onChange={(e) => setNewTaskText(e.target.value)}
-      />
+      <TextField
+          id="outlined-textarea"
+          label="New Task"
+          placeholder="Enter New Task:"
+          value={newTaskText}
+          onChange={(e) => setNewTaskText(e.target.value)}
+          style={TextFieldSstyle}
+          size="small"
+          multiline
+        />
+     <Button variant="contained" endIcon={<AddCircleIcon />} size="medium" onClick={AddTask} style={ButtonStyle} >
+          Add
+     </Button>
 
-      <button id="addButton" onClick={AddTask} 
-      aria-label="Add Task">
-      <span id="ButtonText"> AddTask </span>
-      </button>
-
-    </React.Fragment>
+     </Grid>
   );
 };
 
