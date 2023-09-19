@@ -26,9 +26,9 @@ Figma (optional, for design)
 This To-Do List App project is built using React and is organized into several components, each serving a specific purpose in the application:
 
 1. **App Component**
-File: App.js
+File:**App.js**
 Description: The App component is the root component of the application. It manages the overall state of the to-do list, including task creation, deletion, editing, and task completion. The state is also persisted to local storage, ensuring data retention across sessions.
-File: App.css
+File: **App.css**
 Description: Provide App styling.
 
 2. **Header Component**
