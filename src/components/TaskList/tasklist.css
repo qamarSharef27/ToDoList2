@@ -1,0 +1,27 @@
+.checkbox {
+    color:aliceblue;
+}
+
+.edit {
+    color:aliceblue;
+    padding: 1px;
+}
+
+.delete{
+    color:aliceblue;
+}
+
+.list .MuiList-root{
+    width: 99%;
+    max-width: 360px;
+}
+
+.items .MuiListItem-root {
+    background-color: #3949ab;
+    border-radius: 15px;
+    margin: 4px;
+}
+
+.label {
+    color: aliceblue;
+}

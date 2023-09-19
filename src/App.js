@@ -5,7 +5,6 @@ import TaskForm from './components/TaskForm/TaskForm';
 import TaskList from './components/TaskList/TaskList';
 import { Avatar, Grid, Paper } from '@mui/material';
 import ChecklistIcon from '@mui/icons-material/Checklist';
-import { indigo } from '@mui/material/colors';
 
 
 
@@ -49,17 +48,14 @@ function App() {
     updateLocalStorage(newTasks);
   }
 
-
-  const paperStyle ={paddig : 20, height:'75vh', width:380, margin:"80px auto", overflowY: 'auto'}
-
   return (
     <>
       <Grid>
 
-        <Paper elevation={10} style={paperStyle}>
+        <Paper elevation={10} className='Paper'>
 
-        <Grid align='center' paddingTop={6}>
-          <Avatar         sx={{ width: 56, height: 56, bgcolor: indigo[500] }}>
+        <Grid className='Grid'>
+          <Avatar className='Avatar'>
             <ChecklistIcon />
           </Avatar>
           <Header />
@@ -78,6 +74,7 @@ function App() {
         </Paper> 
 
       </Grid>
+
     </>
   );
 }
